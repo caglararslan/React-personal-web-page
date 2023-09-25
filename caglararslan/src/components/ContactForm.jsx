@@ -14,7 +14,7 @@ function ContactForm() {
             }}
             validationSchema = {validations}
                 onSubmit={(values) => {
-                    console.log(values)
+                    
                 }}
                 >
                 {
