@@ -48,6 +48,7 @@ a {
 .light {
   .header {
     background: $color-white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
 }
 
@@ -107,6 +108,16 @@ a {
               transition: all 0.2s ease-in;
             }
           }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 769px) {
+    ul {
+      li {
+        display: none;
+        &:first-child {
+          display: block;
         }
       }
     }
@@ -193,6 +204,9 @@ a {
       }
     }
   }
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
 }
 
 .header-contact {
@@ -217,6 +231,12 @@ a {
       color: $color-text;
       background: $color-white;
       border-color: $color-white;
+    }
+    @media screen and (max-width: 769px) {
+      a {
+        height: 65px;
+        padding: 0 25px;
+      }
     }
   }
 }
@@ -263,6 +283,9 @@ a {
       -moz-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
+      @media screen and (max-width: 769px) {
+        font-size: 32px;
+      }
     }
     .Typewriter {
       display: block;
@@ -280,6 +303,9 @@ a {
       -moz-transition: all 0.2s ease-in;
       -o-transition: all 0.2s ease-in;
       transition: all 0.2s ease-in;
+      @media screen and (max-width: 769px) {
+        font-size: 12px;
+      }
     }
     .left-content-button {
       a {
@@ -318,6 +344,9 @@ a {
     transform: translateY(-50%);
     img {
       max-width: 350px;
+    }
+    @media screen and (max-width: 769px) {
+      display: none;
     }
   }
   &::before {
@@ -666,6 +695,12 @@ a {
   color: red;
   margin-bottom: 8px;
 }
+}
+
+@media screen and (max-width: 769px) {
+  .contact-form {
+    margin-top: 32px;
+  }
 }
 
 .about-wrapper {
